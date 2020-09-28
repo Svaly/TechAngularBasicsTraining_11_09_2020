@@ -1,0 +1,12 @@
+<div class="container">
+    <p>landing-page-menu-grid works!</p>
+
+    <div class="grid">
+        <div *ngFor="let item of gridItems">
+            <app-landing-page-menu-grid-item 
+             [gridItem]="item"
+             (itemClicked)="onItemClicked($event)">
+            </app-landing-page-menu-grid-item>
+        </div>
+    </div>
+</div>
